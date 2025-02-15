@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Korean - Unlock Your Future!</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 600px; margin: auto; }
+        .price-box { border: 2px solid #007bff; padding: 20px; margin: 20px 0; border-radius: 10px; }
+        .ad-banner { width: 300px; height: 250px; margin: 20px auto; background-color: lightgray; }
+        .btn { padding: 10px 20px; font-size: 16px; background: #007bff; color: #fff; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Learn Korean & Change Your Life!</h1>
+        <p id="subtitle">Master Korean with our expert-led course and open doors to new opportunities.</p>
+        
+        <button class="btn" onclick="switchLanguage()">🇵🇭 Switch to Filipino</button>
+
+        <div class="price-box">
+            <h2 id="price-title">📌 Course Pricing</h2>
+            <p id="price">💰 Basic Course: 499 PHP <br> 💰 Advanced Course: 999 PHP</p>
+        </div>
+
+        <h2 id="why-title">🌟 Why Choose This Course?</h2>
+        <p id="why-text">
+            🚀 <b>Get fluent in just 3 months!</b><br>
+            🎤 Speak Korean like a native with real-life scenarios.<br>
+            📖 100% practical lessons – no boring grammar drills!<br>
+            💼 Boost your career – Korean companies pay 2x more!<br>
+            💕 Impress your K-drama crush with fluent Korean!<br>
+        </p>
+
+        <!-- 광고 1 -->
+        <div class="ad-banner">
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <h2 id="included-title">📚 What’s Included?</h2>
+        <p id="included-text">
+            ✅ Video lessons with native speakers<br>
+            ✅ Downloadable worksheets & quizzes<br>
+            ✅ Access to private study group<br>
+            ✅ Free pronunciation coaching<br>
+        </p>
+
+        <!-- 광고 2 -->
+        <div class="ad-banner">
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <h2 id="testimonials-title">💬 What Our Students Say</h2>
+        <p id="testimonials-text">
+            ⭐ "I got a job in Korea thanks to this course!" - Maria, Manila <br>
+            ⭐ "My pronunciation improved so much!" - Juan, Cebu <br>
+            ⭐ "Best investment ever!" - Angela, Davao <br>
+        </p>
+
+        <!-- 광고 3 -->
+        <div class="ad-banner">
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+<h2 id="cta-title">📩 <a id="cta-link" href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" style="text-decoration: none; color: black;">Enroll Now!</a></h2>
+<p id="cta-text">Start your Korean journey today! Contact us at <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" style="color: #007bff;">our Facebook page</a></p>
+
+        <!-- 광고 4 -->
+        <div class="ad-banner">
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage() {
+            let lang = document.getElementById("title").innerText.includes("Korean") ? "fil" : "en";
+
+            if (lang === "fil") {
+                document.getElementById("title").innerText = "Matuto ng Korean at Baguhin ang Iyong Buhay!";
+                document.getElementById("subtitle").innerText = "Masterin ang Korean sa aming eksperto-led na kurso at buksan ang mga bagong oportunidad.";
+                document.getElementById("price-title").innerText = "📌 Presyo ng Kurso";
+                document.getElementById("price").innerHTML = "💰 Basic Course: 499 PHP <br> 💰 Advanced Course: 999 PHP";
+                document.getElementById("why-title").innerText = "🌟 Bakit Pumili ng Aming Kurso?";
+                document.getElementById("why-text").innerHTML = "🚀 <b>Maging bihasa sa loob ng 3 buwan!</b><br> 🎤 Magsalita ng Korean na parang native sa mga totoong sitwasyon.<br> 📖 100% praktikal na leksyon – walang boring grammar drills!<br> 💼 Palakihin ang iyong career – Mas mataas ang sahod sa Korean companies!<br> 💕 Ipakita ang iyong Korean skills sa iyong K-drama crush!<br>";
+                document.getElementById("included-title").innerText = "📚 Kasama sa Kurso";
+                document.getElementById("included-text").innerHTML = "✅ Mga video lessons mula sa native speakers<br> ✅ Downloadable worksheets at quizzes<br> ✅ Access sa private study group<br> ✅ Libreng pronunciation coaching<br>";
+                document.getElementById("testimonials-title").innerText = "💬 Ano ang Sinasabi ng Aming Mga Estudyante";
+                document.getElementById("testimonials-text").innerHTML = "⭐ \"Nakahanap ako ng trabaho sa Korea dahil sa kursong ito!\" - Maria, Manila <br> ⭐ \"Sobrang gumanda ang aking pronunciation!\" - Juan, Cebu <br> ⭐ \"Pinakamagandang investment ko!\" - Angela, Davao <br>";
+                document.getElementById("cta-title").innerText = "📩 Mag-enroll Ngayon!";
+                document.getElementById("cta-text").innerHTML = "Simulan ang iyong Korean journey ngayon! Makipag-ugnayan sa amin sa <b>support@example.com</b>";
+                document.querySelector(".btn").innerText = "🇬🇧 Switch to English";
+            } else {
+                location.reload(); // 영어로 다시 돌아가려면 새로고침
+            }
+        }
+    </script>
+</body>
+</html>
